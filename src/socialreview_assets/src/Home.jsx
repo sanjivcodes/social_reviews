@@ -22,7 +22,7 @@ export function Home() {
   return (
     <>
     
-    <div class="d-flex min-vh-100 text-center text-white bg-dark">
+    <div class="cover-body d-flex min-vh-100 text-center text-white bg-dark">
     
     <div class="cover-container d-flex w-100 min-vh-100 p-3 mx-auto flex-column">
       <header class="mb-auto">
