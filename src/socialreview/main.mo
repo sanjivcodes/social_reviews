@@ -1,4 +1,4 @@
-iimport Map "mo:base/HashMap";
+import Map "mo:base/HashMap";
 import Text "mo:base/Text";
 import Nat "mo:base/Nat";
 import List "mo:base/List";
@@ -23,7 +23,7 @@ actor {
     businessId: Text;
   };
 
-  let BusinessReviews : [Review] = [];
+  var BusinessReviews : [Review] = [];
 
   public func insert(userId : Text, rating: Nat, feedback: Text, businessId: Text): async [Review] {
     let reviewItem : Review = {
@@ -33,7 +33,8 @@ actor {
       businessId = businessId;
     };
     let newReview : [Review] = [reviewItem];
-    Array.append(BusinessReviews,newReview);
+    BusinessReviews := Array.append(BusinessReviews,newReview);
+    return BusinessReviews;
   };
 
 
