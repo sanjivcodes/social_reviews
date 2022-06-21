@@ -1,0 +1,10 @@
+type Entry = 
+ record {
+   link: text;
+   name: text;
+ };
+service : {
+  greet: (text) -> (text);
+  insert: (text, text) -> ();
+  lookup: (text) -> (opt Entry) query;
+}
