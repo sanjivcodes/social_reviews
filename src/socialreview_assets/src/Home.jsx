@@ -22,9 +22,9 @@ export function Home() {
   return (
     <>
     
-    <body class="d-flex h-100 text-center text-white bg-dark">
+    <div class="d-flex min-vh-100 text-center text-white bg-dark">
     
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div class="cover-container d-flex w-100 min-vh-100 p-3 mx-auto flex-column">
       <header class="mb-auto">
         <div>
           <h3 class="float-md-start mb-0">Cover</h3>
@@ -51,7 +51,7 @@ export function Home() {
     
     
         
-      </body>
+      </div>
         
     </>
   )
