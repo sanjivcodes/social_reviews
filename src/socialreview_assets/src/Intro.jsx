@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from "react"
-import { counter } from "canisters/counter"
-import logo from "./assets/logo-dark.svg"
+// import { counter } from "canisters/counter"
+import logo from "../assets/logo-dark.svg"
 
 export function Intro() {
-  const [count, setCount] = useState()
+  // const [count, setCount] = useState()
 
-  const refreshCounter = async () => {
-    const res = await counter.getValue()
-    setCount(res.toString())
-  }
+  // const refreshCounter = async () => {
+  //   const res = await counter.getValue()
+  //   setCount(res.toString())
+  // }
 
-  useEffect(() => {
-    refreshCounter()
-  }, [])
+  // useEffect(() => {
+  //   refreshCounter()
+  // }, [])
 
-  const onIncrementClick = async () => {
-    await counter.increment()
-    refreshCounter()
-  }
+  // const onIncrementClick = async () => {
+  //   await counter.increment()
+  //   refreshCounter()
+  // }
 
   return (
     <>
@@ -70,13 +70,6 @@ export function Intro() {
             </a>
           </div>
         </div>
-        <button className="demo-button" onClick={onIncrementClick}>
-          Count is: {count}
-        </button>
-        <p style={{fontSize: "0.6em"}}>
-          This counter is running inside a canister
-        </p>
-        <p style={{fontSize: "0.4em"}}>by <a href="https://twitter.com/miamaruq">@miamaruq</a></p>
       </header>
     </>
   )
