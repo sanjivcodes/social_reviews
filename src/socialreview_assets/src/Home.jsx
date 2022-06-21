@@ -21,7 +21,8 @@ export function Home() {
 
   return (
     <>
-     <div class="d-flex h-100 text-center text-white bg-dark">
+    
+    <body class="d-flex h-100 text-center text-white bg-dark">
     
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="mb-auto">
@@ -47,8 +48,10 @@ export function Home() {
         <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
       </footer>
     </div>
-    </div>
     
+    
+        
+      </body>
         
     </>
   )
