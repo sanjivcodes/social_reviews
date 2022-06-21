@@ -1,19 +1,19 @@
 {
   "canisters": {
-    "tinylink": {
-      "main": "src/tinylink/main.mo",
+    "socialreview": {
+      "main": "src/socialreview/main.mo",
       "type": "motoko"
     },
-    "tinylink_assets": {
+    "socialreview_assets": {
       "dependencies": [
-        "tinylink"
+        "socialreview"
       ],
       "frontend": {
-        "entrypoint": "src/tinylink_assets/src/index.html"
+        "entrypoint": "src/socialreview_assets/src/index.html"
       },
       "source": [
-        "src/tinylink_assets/assets",
-        "dist/tinylink_assets/"
+        "src/socialreview_assets/assets",
+        "dist/socialreview_assets/"
       ],
       "type": "assets"
     }

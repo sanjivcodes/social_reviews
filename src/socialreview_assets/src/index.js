@@ -1,4 +1,4 @@
-import { tinylink } from "../../declarations/tinylink";
+import { socialreview } from "../../declarations/socialreview";
 
 document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -9,7 +9,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
   button.setAttribute("disabled", true);
 
   // Interact with foo actor, calling the greet method
-  const greeting = await tinylink.greet(name);
+  const greeting = await socialreview.greet(name);
 
   button.removeAttribute("disabled");
 

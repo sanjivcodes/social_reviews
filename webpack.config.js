@@ -38,7 +38,7 @@ const canisterEnvVariables = initCanisterEnv();
 
 const isDevelopment = process.env.NODE_ENV !== "production";
 
-const frontendDirectory = "tinylink_assets";
+const frontendDirectory = "socialreview_assets";
 
 const asset_entry = path.join("src", frontendDirectory, "src", "index.html");
 
@@ -87,8 +87,8 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: path.join(__dirname, "src", "tinylink_assets", "assets"),
-          to: path.join(__dirname, "dist", "tinylink_assets"),
+          from: path.join(__dirname, "src", "socialreview_assets", "assets"),
+          to: path.join(__dirname, "dist", "socialreview_assets"),
         },
       ],
     }),
