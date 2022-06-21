@@ -7,7 +7,6 @@ actor {
 
   type Link = Text;
   type Slug = Text;
-  type Name = Text;
 
   type Entry = {
     name: Text;
@@ -48,5 +47,9 @@ actor {
       
     };
     return slug;
-  }
+  };
+
+  public func greet(name : Text) : async Text {
+    return "Hello, " # name # "!";
+  };
 };
