@@ -3,6 +3,8 @@ import logo from "../assets/logo-dark.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { BusinessForm } from "./BusinessForm"
+import { Auth } from "./Auth"
+
 
 export function Header() {
   return (
@@ -56,8 +58,7 @@ export function Header() {
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
             <strong class="px-2">Social Reviews</strong>
           </a>
-          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" type="button">Create a Business page</a>
-
+          <Auth />
           {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button> */}
@@ -67,12 +68,13 @@ export function Header() {
 
       <section class="jumbotron text-center">
         <div class="container">
-          <h1 class="jumbotron-heading">Album example</h1>
-          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+          <h1 class="jumbotron-heading">Fitbit Health Assistant</h1>
+          <p class="lead text-muted">Take charge of your health using Fitbit trackers. Find your fit with Fitbit's family of fitness products that help you stay motivated and improve your health by tracking your activity, exercise, food </p>
           <p>
             <a href="#" class="btn btn-primary my-2 mx-2">Add a Review</a>
             
-            <a href="#" class="btn btn-warning my-2 mx-2">Explore other businesses</a>
+            <a href="#" class="btn btn-warning my-2 mx-2"  data-toggle="modal" data-target="#exampleModal" type="button">Create a Business Page</a>
+
           </p>
         </div>
       </section>

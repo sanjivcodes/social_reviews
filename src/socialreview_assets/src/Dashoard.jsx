@@ -5,6 +5,8 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { Header } from "./Header"
 
 export function Dashboard() {
+  const [signedIn, setSignedIn] = useState(false)
+  const [principal, setPrincipal] = useState("")
   return (
     <>
 <Header />

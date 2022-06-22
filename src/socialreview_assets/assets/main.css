@@ -43,19 +43,13 @@ button[type="submit"] {
 }
 
 .auth-button {
-    color: black;
     background: white;
     padding: 0 2em;
-    border-radius: 60px;
     font-size: 1em;
     line-height: 40px;
     height: 33px;
     outline: 0;
     border: 0;
-    cursor: pointer;
-    text-decoration: underline;
-    display: flex;
-    align-items: center;
 }
 
 
