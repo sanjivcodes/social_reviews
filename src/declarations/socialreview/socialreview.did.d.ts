@@ -1,9 +1,13 @@
 import type { Principal } from '@dfinity/principal';
 import type { ActorMethod } from '@dfinity/agent';
 
-export interface Entry { 'link' : string, 'name' : string }
+export interface Review {
+  'businessId' : string,
+  'userId' : string,
+  'feedback' : string,
+  'rating' : bigint,
+}
 export interface _SERVICE {
-  'greet' : ActorMethod<[string], string>,
-  'insert' : ActorMethod<[string, string], undefined>,
-  'lookup' : ActorMethod<[string], [] | [Entry]>,
+  'getBusinessReviews' : ActorMethod<[], Array<Review>>,
+  'insert' : ActorMethod<[string, bigint, string, string], Array<Review>>,
 }

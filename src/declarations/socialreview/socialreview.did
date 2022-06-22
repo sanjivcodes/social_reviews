@@ -1,10 +1,11 @@
-type Entry = 
+type Review = 
  record {
-   link: text;
-   name: text;
+   businessId: text;
+   feedback: text;
+   rating: nat;
+   userId: text;
  };
 service : {
-  greet: (text) -> (text);
-  insert: (text, text) -> ();
-  lookup: (text) -> (opt Entry) query;
+  getBusinessReviews: () -> (vec Review) query;
+  insert: (text, nat, text, text) -> (vec Review);
 }

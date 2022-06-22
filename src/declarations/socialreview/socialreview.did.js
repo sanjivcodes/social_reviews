@@ -1,9 +1,17 @@
 export const idlFactory = ({ IDL }) => {
-  const Entry = IDL.Record({ 'link' : IDL.Text, 'name' : IDL.Text });
+  const Review = IDL.Record({
+    'businessId' : IDL.Text,
+    'userId' : IDL.Text,
+    'feedback' : IDL.Text,
+    'rating' : IDL.Nat,
+  });
   return IDL.Service({
-    'greet' : IDL.Func([IDL.Text], [IDL.Text], []),
-    'insert' : IDL.Func([IDL.Text, IDL.Text], [], []),
-    'lookup' : IDL.Func([IDL.Text], [IDL.Opt(Entry)], ['query']),
+    'getBusinessReviews' : IDL.Func([], [IDL.Vec(Review)], ['query']),
+    'insert' : IDL.Func(
+        [IDL.Text, IDL.Nat, IDL.Text, IDL.Text],
+        [IDL.Vec(Review)],
+        [],
+      ),
   });
 };
 export const init = ({ IDL }) => { return []; };
