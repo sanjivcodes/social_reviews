@@ -54,7 +54,7 @@ export default class Dashboard extends React.Component {
          output = output+'<p>'+ value["feedback"] +'</p>';
         
         output = output+' </div></div>';
-        output = output + '<h6 class="font-weight-bold">Jay <span class="text-primary">('+value["userId"] + ')</span></h6></div></div>';
+        output = output + '<h6 class="font-weight-bold">User <span class="text-primary">('+value["userId"] + ')</span></h6></div></div>';
 
         });
         console.log(output);

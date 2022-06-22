@@ -69,13 +69,21 @@ export function Header() {
       <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading">Fitbit Health Assistant</h1>
-          <p class="lead text-muted">Take charge of your health using Fitbit trackers. Find your fit with Fitbit's family of fitness products that help you stay motivated and improve your health by tracking your activity, exercise, food </p>
-          <p>
+          <div class="row">
+            <div class="col-md-10">
+            <p class="lead text-muted">Take charge of your health using Fitbit trackers. Find your fit with Fitbit's family of fitness products that help you stay motivated and improve your health by tracking your activity, exercise, food </p>
+            </div>
+            <div class="col-md-2">
+            <img class="rounded float-right" src="https://user-images.githubusercontent.com/5363211/174929390-c9749b91-1481-4121-b7ca-0d1e330e53e7.jpeg"></img>
+              
+            </div>
+
+          </div>
+          
             <a href="#" class="btn btn-primary my-2 mx-2">Add a Review</a>
             
             <a href="#" class="btn btn-warning my-2 mx-2"  data-toggle="modal" data-target="#exampleModal" type="button">Create a Business Page</a>
 
-          </p>
         </div>
       </section>
       </div>
