@@ -1,5 +1,12 @@
 # Social Review
 
+Deployed canisters.
+URLs:
+  Frontend:
+    socialreview_assets: https://7elun-6yaaa-aaaal-aayba-cai.ic0.app/
+  Candid:
+    socialreview: https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.ic0.app/?id=7ni7r-iqaaa-aaaal-aayaq-cai
+    
 Welcome to your new socialreview project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
 
 To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
