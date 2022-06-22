@@ -2,7 +2,7 @@ import React from "react"
 import { Auth } from "./Auth"
 import { Intro } from "./Intro"
 import { Home } from "./Home"
-import { Dashboard } from "./Dashoard"
+import  Dashboard  from "./Dashoard"
 
 function App() {
   return (
