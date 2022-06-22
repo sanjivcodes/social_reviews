@@ -2,12 +2,35 @@ import React, { useEffect, useState } from "react"
 import logo from "../assets/logo-dark.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
-
+import { BusinessForm } from "./BusinessForm"
 
 export function Header() {
   return (
     <>
 <div>
+{/* <!-- Button trigger modal --> */}
+
+
+{/* <!-- Modal --> */}
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Create a business page</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <BusinessForm />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 <header>
       <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
@@ -33,9 +56,11 @@ export function Header() {
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
             <strong class="px-2">Social Reviews</strong>
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" type="button">Create a Business page</a>
+
+          {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+          </button> */}
         </div>
       </div>
     </header>
@@ -45,8 +70,9 @@ export function Header() {
           <h1 class="jumbotron-heading">Album example</h1>
           <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
           <p>
-            <a href="#" class="btn btn-primary my-2 mx-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2 mx-2">Secondary action</a>
+            <a href="#" class="btn btn-primary my-2 mx-2">Add a Review</a>
+            
+            <a href="#" class="btn btn-warning my-2 mx-2">Explore other businesses</a>
           </p>
         </div>
       </section>

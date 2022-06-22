@@ -10,8 +10,8 @@ export function Dashboard() {
 <Header />
 <div class="container">
 <section >
-    <div class="container py-5">
-      <div class="row d-flex justify-content-center">
+    <div class="container">
+      {/* <div class="row d-flex justify-content-center">
         <div class="col-md-10 col-xl-8 text-center">
           <h3 class="fw-bold mb-4">Social Reviews</h3>
           <p class="mb-4 pb-2 mb-md-5 pb-md-0">
@@ -20,7 +20,7 @@ export function Dashboard() {
             quisquam eum porro a pariatur veniam.
           </p>
         </div>
-      </div>
+      </div> */}
       <div class="card shadow-md rounded bg-light">
         <div class="card-body px-4 py-4">
           <div class="row>">
